@@ -1,5 +1,7 @@
 /target/
 
+.externalToolBuilders
+
 # maven #
 target
 

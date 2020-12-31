@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ajie-workFlow">
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ajie-flowEngine/src/main/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ajie-test/src/main/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/eureka/src/main/java"/>
-        <property name="context-root" value="ajie-workFlow"/>
-        <property name="java-output-path" value="/ajie-workFlow/bin"/>
-    </wb-module>
-</project-modules>

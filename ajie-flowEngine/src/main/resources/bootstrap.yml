@@ -2,7 +2,7 @@ server:
    port: 8200
 spring:
    application:
-      name: flowEngine
+      name: flow-engine
    cloud:
       config:
          label: main

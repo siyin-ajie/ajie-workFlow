@@ -63,6 +63,11 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<!-- ribbon -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>
 		<!-- feign -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -108,5 +113,6 @@
 		<module>ajie-configServer</module>
 		<module>eureka-8001</module>
 		<module>eureka-8002</module>
+		<module>ajie-ribbon</module>
 	</modules>
 </project>

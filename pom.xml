@@ -106,5 +106,7 @@
 		<module>ajie-test</module>
 		<module>ajie-flowEngine</module>
 		<module>ajie-configServer</module>
+		<module>eureka-8001</module>
+		<module>eureka-8002</module>
 	</modules>
 </project>

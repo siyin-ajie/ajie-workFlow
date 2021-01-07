@@ -1,14 +1,14 @@
 server:
-   port: 8000
+   port: 8001
 spring:
    application:
       name: eureka-server
 eureka:
    instance:
-      #hostname: eureka8000.com
+      #hostname: eureka8001.com
       prefer-ip-address: true #使用ip进行注册
    client:
       register-with-eureka: true
       fetch-registry: true
       service-url: 
-         defaultZone: http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/
+         defaultZone: http://eureka8000.com:8000/eureka/,http://eureka8002.com:8002/eureka/

@@ -3,7 +3,7 @@
 对activiti工作流实现重新封装，使用springCloud重构</br>
 （初次使用springCloud，记录理解）</br>
 2020/12/25</br>
-1.Eureka：用于注册服务，注册中心，发现服务，注册表记录所有客户端注册得服务地址和端口</br>
+1.Eureka：用于注册服务，注册中心，发现服务，注册表记录所有客户端注册得服务地址和端口，多个服务间互相注册时需要做域名映射</br>
 2.Eureka Client：负责将这个服务的信息注册到Eureka Server中</br>
   Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号</br>
 3.Feign：为所需接口使用@FeignClient注解定义，其他服务调用时feign会针对此注解得接口创建一个动态得代理，使用feign简化调用代码，调用时本质上就是调用feign所创建得代理</br>

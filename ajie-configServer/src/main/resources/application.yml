@@ -1,0 +1,18 @@
+server:
+   port: 8001
+spring:
+   application:
+      name: config-server
+   cloud:
+      config:
+         label: main
+         server:
+            git:
+               uri: https://github.com/siyin-ajie/spring-cloud-config.git
+               search-path: spring-cloud-config
+               username: 2507214578@qq.com
+               password: ajie19960201ajie
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8000/eureka/

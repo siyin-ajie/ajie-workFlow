@@ -12,15 +12,13 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  */
 @SpringBootApplication // spring-boot 启动注解
 @EnableEurekaServer // spring-cloud 服务注解
-public class RegisterMain {
+public class EurekaApp {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// new
-		// SpringApplicationBuilder(RegisterMain.class).web(WebApplicationType.NONE).run(args);
-		SpringApplication.run(RegisterMain.class, args);
+		SpringApplication.run(EurekaApp.class, args);
 	}
 
 }

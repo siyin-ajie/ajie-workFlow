@@ -6,20 +6,13 @@
 		<artifactId>ajie-workFlow</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.ajie.eureka</groupId>
-	<artifactId>eureka</artifactId>
-	<description>注册中心</description>
-
+	<groupId>com.ajie.configServer</groupId>
+	<artifactId>ajie-configServer</artifactId>
 	<dependencies>
+		<!-- springcloudconfig服务端 -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-		<dependency>
-			<!-- 配置中心服务端 -->
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 	</dependencies>
-
 </project>

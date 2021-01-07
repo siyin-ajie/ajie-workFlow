@@ -11,5 +11,7 @@ eureka:
     instance-id: ajie-test
     appname: ${spring.application.name}
   client: 
-    service-url: 
-      defaultZone: http://localhost:8888/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://eureka8000.com:8000/eureka/,http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/

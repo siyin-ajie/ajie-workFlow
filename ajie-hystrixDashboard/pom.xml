@@ -8,6 +8,7 @@
 	</parent>
 	<groupId>com.ajie.hystrixDashboard</groupId>
 	<artifactId>ajie-hystrixDashboard</artifactId>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

@@ -6,9 +6,12 @@
 		<artifactId>ajie-workFlow</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.ajie.flowEngine</groupId>
-	<artifactId>ajie-flowEngine</artifactId>
-	<description>流程引擎</description>
+	<groupId>com.ajie.hystrixDashboard</groupId>
+	<artifactId>ajie-hystrixDashboard</artifactId>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+		</dependency>
 	</dependencies>
 </project>

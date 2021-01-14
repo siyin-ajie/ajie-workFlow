@@ -2,8 +2,10 @@ package com.ajie.flowEngine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
@@ -14,9 +16,9 @@ import org.springframework.web.client.RestTemplate;
  * @author hongjie.gao
  * @date 2020年12月29日下午4:44:24
  */
-
+@EnableHystrix // 启用断路器
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients // 启用feign
 @EnableDiscoveryClient
 public class FlowEngineApp {
 

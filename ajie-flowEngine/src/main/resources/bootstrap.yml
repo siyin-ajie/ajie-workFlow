@@ -10,6 +10,26 @@ spring:
          discovery:
             enabled: true
             serviceId: config-server
+   datasource:
+      #连接池
+      type: org.apache.commons.dbcp.BasicDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://vshdevdb.idc.vgrass.com:3306/t_noah?characterEncoding=utf8
+      username: root
+      password: Tw@dev123456
+      druid:
+         max-active: 20
+         max-wait: 60000
+         max-idle: 20
+         initial-size: 0
+   activiti:
+      # 这条配置为true，会默认加在resources/processes包下的流程文件（.bpmn），如果流程文件没有会导致项目启动报错，所以设置为false
+      check-process-definitions: false
+      database-schema: ACTIVITI
+      # 设置为true，如果库中没有activiti对应表，就创建
+      database-schema-update: true
+      history-level: full
+      db-history-used: true
 eureka:
    client:
       register-with-eureka: true

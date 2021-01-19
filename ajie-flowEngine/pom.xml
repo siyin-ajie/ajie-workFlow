@@ -9,6 +9,76 @@
 	<groupId>com.ajie.flowEngine</groupId>
 	<artifactId>ajie-flowEngine</artifactId>
 	<description>流程引擎</description>
+
+	<properties>
+		<activiti.version>5.21.0</activiti.version>
+	</properties>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-spring-boot-starter-basic</artifactId>
+			<version>${activiti.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.mybatis</groupId>
+					<artifactId>mybatis</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>activation</artifactId>
+					<groupId>javax.activation</groupId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-security</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-diagram-rest</artifactId>
+			<version>${activiti.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-security-config</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-core</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-crypto</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-web</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-modeler</artifactId>
+			<version>${activiti.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-security-config</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-core</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-crypto</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-security-web</artifactId>
+					<groupId>org.springframework.security</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 </project>
